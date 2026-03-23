@@ -372,7 +372,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Converter_ACDC:TMLM04124"
+		(symbol "Converter_ACDC:IRM-03-24"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -384,7 +384,7 @@
 					)
 				)
 			)
-			(property "Value" "TMLM04124"
+			(property "Value" "IRM-03-24"
 				(at 0 -6.35 0)
 				(effects
 					(font
@@ -392,7 +392,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Converter_ACDC:Converter_ACDC_TRACO_TMLM-04_THT"
+			(property "Footprint" "Converter_ACDC:Converter_ACDC_MeanWell_IRM-03-xx_THT"
 				(at 0 -8.89 0)
 				(effects
 					(font
@@ -401,7 +401,16 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.tracopower.com/products/tmlm.pdf"
+			(property "Datasheet" "https://www.meanwell.com/Upload/PDF/IRM-03/IRM-03-SPEC.PDF"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "24V, 125mA, 3W, Isolated, AC-DC, IRM03"
 				(at 0 0 0)
 				(effects
 					(font
@@ -410,7 +419,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "24V 167mA AC/DC low noise power module"
+			(property "ki_keywords" "Miniature Module-type Power Supply MeanWell"
 				(at 0 0 0)
 				(effects
 					(font
@@ -419,7 +428,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "Traco Power 4W AC-DC module power supply"
+			(property "ki_fp_filters" "Converter*ACDC*MeanWell*IRM*03*THT*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -428,16 +437,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Converter*ACDC*TRACO*TMLM*04*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "TMLM04124_0_1"
+			(symbol "IRM-03-24_0_1"
 				(rectangle
 					(start -7.62 5.08)
 					(end 7.62 -5.08)
@@ -582,11 +582,48 @@
 					)
 				)
 			)
-			(symbol "TMLM04124_1_1"
+			(symbol "IRM-03-24_1_1"
 				(pin power_in line
 					(at -10.16 2.54 0)
 					(length 2.54)
-					(name "AC(L)"
+					(name "AC/L"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "AC/N"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at -7.62 0 0)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -601,35 +638,17 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at -10.16 -2.54 0)
-					(length 2.54)
-					(name "AC(N)"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin power_out line
 					(at 10.16 2.54 180)
 					(length 2.54)
-					(name "Vout+"
+					(name "+Vo"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "2"
+					(number "16"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -640,14 +659,14 @@
 				(pin power_out line
 					(at 10.16 -2.54 180)
 					(length 2.54)
-					(name "Vout-"
+					(name "-Vo"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "14"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1121,6 +1140,534 @@
 				)
 			)
 			(symbol "FINDER-40.52_1_1"
+				(pin passive line
+					(at -10.16 7.62 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -7.62 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 7.62 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 7.62 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 7.62 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -7.62 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 7.62 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Relay:G2RL-2"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "K"
+				(at 16.51 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "G2RL-2"
+				(at 16.51 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Relay_THT:Relay_DPDT_Omron_G2RL-2"
+				(at 16.51 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g2rl.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "General Purpose Low Profile Relay DPDT Through Hole, Omron G2RL series, 8A 250VAC"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Dual Pole Relay Omron DPDT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Relay?DPDT?Omron?G2RL*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "G2RL-2_0_1"
+				(rectangle
+					(start -15.24 5.08)
+					(end 15.24 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -13.335 1.905)
+					(end -6.985 -1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -12.7 -1.905) (xy -7.62 1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -10.16 5.08) (xy -10.16 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -10.16 -5.08) (xy -10.16 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.985 0) (xy -6.35 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.715 0) (xy -5.08 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.445 0) (xy -3.81 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.175 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 5.08) (xy -2.54 2.54) (xy -1.905 3.175) (xy -2.54 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 0) (xy 0 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy -1.905 3.81)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 5.08) (xy 2.54 2.54) (xy 1.905 3.175) (xy 2.54 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.175 0) (xy 3.81 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.445 0) (xy 5.08 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.715 0) (xy 6.35 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.985 0) (xy 7.62 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 5.08) (xy 7.62 2.54) (xy 8.255 3.175) (xy 7.62 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.255 0) (xy 8.89 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -2.54) (xy 8.255 3.81)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -2.54) (xy 10.16 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.7 5.08) (xy 12.7 2.54) (xy 12.065 3.175) (xy 12.7 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "G2RL-2_1_1"
 				(pin passive line
 					(at -10.16 7.62 270)
 					(length 2.54)
@@ -2966,7 +3513,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Converter_ACDC:TMLM04124")
+		(lib_id "Converter_ACDC:IRM-03-24")
 		(at 63.5 82.55 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2975,7 +3522,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2634387d-6ba7-4d66-8bf1-f086138154e0")
-		(property "Reference" "PS2"
+		(property "Reference" "PS1"
 			(at 63.5 72.39 0)
 			(effects
 				(font
@@ -2983,7 +3530,7 @@
 				)
 			)
 		)
-		(property "Value" "TMLM04124"
+		(property "Value" "IRM-03-24"
 			(at 63.5 74.93 0)
 			(effects
 				(font
@@ -2991,7 +3538,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Converter_ACDC:Converter_ACDC_TRACO_TMLM-04_THT"
+		(property "Footprint" "Converter_ACDC:Converter_ACDC_MeanWell_IRM-03-xx_THT"
 			(at 63.5 91.44 0)
 			(effects
 				(font
@@ -3000,8 +3547,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.tracopower.com/products/tmlm.pdf"
-			(at 63.5 82.55 0)
+		(property "Datasheet" "https://www.meanwell.com/Upload/PDF/IRM-03/IRM-03-SPEC.PDF"
+			(at 63.5 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3009,7 +3556,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "24V 167mA AC/DC low noise power module"
+		(property "Description" "24V, 125mA, 3W, Isolated, AC-DC, IRM03"
 			(at 63.5 82.55 0)
 			(effects
 				(font
@@ -3021,19 +3568,22 @@
 		(pin "3"
 			(uuid "37644d5a-e9ad-4f00-99bc-2684ddec2db5")
 		)
-		(pin "2"
+		(pin "1"
 			(uuid "714549fe-24f6-45d1-a49e-ff92c483c51f")
 		)
-		(pin "6"
+		(pin "16"
 			(uuid "7ed0fd0e-3fca-4c43-9727-5c390c33f332")
 		)
 		(pin "5"
 			(uuid "b7a77fc1-d650-4ba6-971d-99736adb55b1")
 		)
+		(pin "14"
+			(uuid "4a3dce0a-a363-470b-b96e-22fb72d79c25")
+		)
 		(instances
 			(project "voron-pmu"
 				(path "/2cf7b3ca-ad8f-4a14-9215-f0584bf5d4a1"
-					(reference "PS2")
+					(reference "PS1")
 					(unit 1)
 				)
 			)
@@ -3110,7 +3660,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Relay:FINDER-40.52")
+		(lib_id "Relay:G2RL-2")
 		(at 48.26 137.16 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3127,7 +3677,7 @@
 				)
 			)
 		)
-		(property "Value" "FINDER-40.52"
+		(property "Value" "G2RL-2"
 			(at 48.26 119.38 90)
 			(effects
 				(font
@@ -3135,16 +3685,17 @@
 				)
 			)
 		)
-		(property "Footprint" "Relay_THT:Relay_DPDT_Finder_40.52"
-			(at 47.498 171.45 0)
+		(property "Footprint" "Relay_THT:Relay_DPDT_Omron_G2RL-2"
+			(at 46.99 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://gfinder.findernet.com/assets/Series/353/S40EN.pdf"
+		(property "Datasheet" "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g2rl.pdf"
 			(at 48.26 137.16 0)
 			(effects
 				(font
@@ -3153,7 +3704,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "FINDER 40.52, Dual Pole Relay, 5mm Pitch, 10A"
+		(property "Description" "General Purpose Low Profile Relay DPDT Through Hole, Omron G2RL series, 8A 250VAC"
 			(at 48.26 137.16 0)
 			(effects
 				(font
@@ -3264,7 +3815,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Relay:FINDER-40.52")
+		(lib_id "Relay:G2RL-2")
 		(at 49.53 40.64 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3281,7 +3832,7 @@
 				)
 			)
 		)
-		(property "Value" "FINDER-40.52"
+		(property "Value" "G2RL-2"
 			(at 49.53 22.86 90)
 			(effects
 				(font
@@ -3289,16 +3840,17 @@
 				)
 			)
 		)
-		(property "Footprint" "Relay_THT:Relay_DPDT_Finder_40.52"
-			(at 48.768 74.93 0)
+		(property "Footprint" "Relay_THT:Relay_DPDT_Omron_G2RL-2"
+			(at 48.26 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://gfinder.findernet.com/assets/Series/353/S40EN.pdf"
+		(property "Datasheet" "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g2rl.pdf"
 			(at 49.53 40.64 0)
 			(effects
 				(font
@@ -3307,7 +3859,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "FINDER 40.52, Dual Pole Relay, 5mm Pitch, 10A"
+		(property "Description" "General Purpose Low Profile Relay DPDT Through Hole, Omron G2RL series, 8A 250VAC"
 			(at 49.53 40.64 0)
 			(effects
 				(font
@@ -3754,7 +4306,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Relay:FINDER-40.52")
+		(lib_id "Relay:G2RL-2")
 		(at 153.67 53.34 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3771,7 +4323,7 @@
 				)
 			)
 		)
-		(property "Value" "FINDER-40.52"
+		(property "Value" "G2RL-2"
 			(at 153.67 35.56 90)
 			(effects
 				(font
@@ -3779,16 +4331,17 @@
 				)
 			)
 		)
-		(property "Footprint" "Relay_THT:Relay_DPDT_Finder_40.52"
-			(at 152.908 87.63 0)
+		(property "Footprint" "Relay_THT:Relay_DPDT_Omron_G2RL-2"
+			(at 152.4 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://gfinder.findernet.com/assets/Series/353/S40EN.pdf"
+		(property "Datasheet" "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g2rl.pdf"
 			(at 153.67 53.34 0)
 			(effects
 				(font
@@ -3797,7 +4350,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "FINDER 40.52, Dual Pole Relay, 5mm Pitch, 10A"
+		(property "Description" "General Purpose Low Profile Relay DPDT Through Hole, Omron G2RL series, 8A 250VAC"
 			(at 153.67 53.34 0)
 			(effects
 				(font
