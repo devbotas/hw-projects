@@ -447,8 +447,13 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_footprint_libs": [
+      "Connector_JST",
+      "MountingHole"
+    ],
+    "pinned_symbol_libs": [
+      "Mechanical"
+    ]
   },
   "meta": {
     "filename": "voron-pmu.kicad_pro",
