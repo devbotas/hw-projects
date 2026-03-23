@@ -372,7 +372,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Converter_ACDC:IRM-03-24"
+		(symbol "Converter_ACDC:RAC05-24SK"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -384,7 +384,7 @@
 					)
 				)
 			)
-			(property "Value" "IRM-03-24"
+			(property "Value" "RAC05-24SK"
 				(at 0 -6.35 0)
 				(effects
 					(font
@@ -392,7 +392,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Converter_ACDC:Converter_ACDC_MeanWell_IRM-03-xx_THT"
+			(property "Footprint" "Converter_ACDC:Converter_ACDC_RECOM_RAC05-xxSK_THT"
 				(at 0 -8.89 0)
 				(effects
 					(font
@@ -401,8 +401,8 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.meanwell.com/Upload/PDF/IRM-03/IRM-03-SPEC.PDF"
-				(at 0 -10.16 0)
+			(property "Datasheet" "https://www.recom-power.com/pdf/Powerline-AC-DC/RAC05-K.pdf"
+				(at -2.54 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -410,7 +410,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "24V, 125mA, 3W, Isolated, AC-DC, IRM03"
+			(property "Description" "5W Single Output EMC Class B 24V 210mA"
 				(at 0 0 0)
 				(effects
 					(font
@@ -419,7 +419,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "Miniature Module-type Power Supply MeanWell"
+			(property "ki_keywords" "ac dc power supply"
 				(at 0 0 0)
 				(effects
 					(font
@@ -428,7 +428,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Converter*ACDC*MeanWell*IRM*03*THT*"
+			(property "ki_fp_filters" "Converter*ACDC*RECOM*RAC05*SK*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -437,7 +437,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "IRM-03-24_0_1"
+			(symbol "RAC05-24SK_1_1"
 				(rectangle
 					(start -7.62 5.08)
 					(end 7.62 -5.08)
@@ -581,12 +581,10 @@
 						(type none)
 					)
 				)
-			)
-			(symbol "IRM-03-24_1_1"
 				(pin power_in line
 					(at -10.16 2.54 0)
 					(length 2.54)
-					(name "AC/L"
+					(name "AC(L)"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -604,7 +602,26 @@
 				(pin power_in line
 					(at -10.16 -2.54 0)
 					(length 2.54)
-					(name "AC/N"
+					(name "AC(N)"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 7.62 0 180)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -619,11 +636,10 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at -7.62 0 0)
+				(pin power_out line
+					(at 10.16 2.54 180)
 					(length 2.54)
-					(hide yes)
-					(name "NC"
+					(name "+Vout"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -639,34 +655,16 @@
 					)
 				)
 				(pin power_out line
-					(at 10.16 2.54 180)
-					(length 2.54)
-					(name "+Vo"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
 					(at 10.16 -2.54 180)
 					(length 2.54)
-					(name "-Vo"
+					(name "-Vout"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "14"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3513,7 +3511,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Converter_ACDC:IRM-03-24")
+		(lib_id "Converter_ACDC:RAC05-24SK")
 		(at 63.5 82.55 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3530,7 +3528,7 @@
 				)
 			)
 		)
-		(property "Value" "IRM-03-24"
+		(property "Value" "RAC05-24SK"
 			(at 63.5 74.93 0)
 			(effects
 				(font
@@ -3538,7 +3536,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Converter_ACDC:Converter_ACDC_MeanWell_IRM-03-xx_THT"
+		(property "Footprint" "Converter_ACDC:Converter_ACDC_RECOM_RAC05-xxSK_THT"
 			(at 63.5 91.44 0)
 			(effects
 				(font
@@ -3547,8 +3545,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.meanwell.com/Upload/PDF/IRM-03/IRM-03-SPEC.PDF"
-			(at 63.5 92.71 0)
+		(property "Datasheet" "https://www.recom-power.com/pdf/Powerline-AC-DC/RAC05-K.pdf"
+			(at 60.96 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3556,7 +3554,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "24V, 125mA, 3W, Isolated, AC-DC, IRM03"
+		(property "Description" "5W Single Output EMC Class B 24V 210mA"
 			(at 63.5 82.55 0)
 			(effects
 				(font
@@ -3571,13 +3569,13 @@
 		(pin "1"
 			(uuid "714549fe-24f6-45d1-a49e-ff92c483c51f")
 		)
-		(pin "16"
+		(pin "2"
 			(uuid "7ed0fd0e-3fca-4c43-9727-5c390c33f332")
 		)
 		(pin "5"
 			(uuid "b7a77fc1-d650-4ba6-971d-99736adb55b1")
 		)
-		(pin "14"
+		(pin "4"
 			(uuid "4a3dce0a-a363-470b-b96e-22fb72d79c25")
 		)
 		(instances
