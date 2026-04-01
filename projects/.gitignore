@@ -45,3 +45,4 @@ out/
 
 *.lck
 *auto_saved_files#
+*.history
