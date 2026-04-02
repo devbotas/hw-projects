@@ -5619,6 +5619,19 @@
 		(layer "Edge.Cuts")
 		(uuid "fc0aab7b-3111-4536-9816-f1c9a7b6dc0b")
 	)
+	(gr_text "Copyright (c) 2026 devbotas"
+		(at 130 51 0)
+		(layer "F.SilkS")
+		(uuid "a0785a9a-37a8-4bff-91cb-4c16d2774757")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
 	(segment
 		(start 187.5 88.5)
 		(end 196.25 88.5)
