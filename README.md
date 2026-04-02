@@ -2,7 +2,7 @@ Since KiCad has no package management, I'm trying out a monorepo approach.
 
 # Voron PMU
 
-[PMU](assets/voron-pmu-1.0.0.png)
+![PMU](assets/voron-pmu-1.0.0.png)
 
 ## The problem
 
