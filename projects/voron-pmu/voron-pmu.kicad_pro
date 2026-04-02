@@ -512,10 +512,22 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
+        "track_width": 0.4,
         "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 1.5,
+        "line_style": 0,
+        "name": "Mains power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgb(204, 102, 0)",
+        "track_width": 2.5,
+        "tuning_profile": "",
         "wire_width": 6
       }
     ],
@@ -524,7 +536,40 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Mains power",
+        "pattern": "/line-in"
+      },
+      {
+        "netclass": "Mains power",
+        "pattern": "/neutral-in"
+      },
+      {
+        "netclass": "Mains power",
+        "pattern": "/neutral-critical"
+      },
+      {
+        "netclass": "Mains power",
+        "pattern": "/line-critical"
+      },
+      {
+        "netclass": "Mains power",
+        "pattern": "/neutral-non-critical"
+      },
+      {
+        "netclass": "Mains power",
+        "pattern": "/line-non-critical"
+      },
+      {
+        "netclass": "Mains power",
+        "pattern": "/line-in-aux"
+      },
+      {
+        "netclass": "Mains power",
+        "pattern": "/neutral-in-aux"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
