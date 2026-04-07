@@ -82,9 +82,9 @@
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "output")
 		)
 	)
 	(footprint "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_5-G-3.5_1x05_P3.50mm_Vertical"
@@ -4595,6 +4595,19 @@
 				(thickness 0.15)
 			)
 			(justify left bottom)
+		)
+	)
+	(gr_text "Battery distribution box v1.0.0\nCopyright (c) 2026 devbotas"
+		(at 107 118 90)
+		(layer "F.SilkS")
+		(uuid "b1cbea7d-0c65-497d-8af8-719911816274")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify bottom)
 		)
 	)
 	(segment
